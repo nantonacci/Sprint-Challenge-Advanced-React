@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './App.css';
+import PlayerCard from './components/PlayerCard';
 
 class App extends React.Component {
   constructor(){
@@ -18,15 +19,16 @@ class App extends React.Component {
       .then(res => res.json())
       .then(res => this.setState({ players: res }))
       .catch(err => console.log(err));
-
+    
   }
 
   
   render() {
     console.log("render");
+    console.log(this.state.players);
     return (
       <div>
-        Hi
+        <PlayerCard player={this.state.players} />
         
       </div>
     );
