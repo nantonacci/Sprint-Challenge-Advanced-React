@@ -1,13 +1,42 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'PT Serif', serif;
+}
+body {
+  color: #24292e;
+  background-color: #fcf0d3;
+}
+button {
+  border: 2px solid #372031;
+  background-color: #9ec7bc;
+  color: #372031;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 3px;
+
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.cardcontainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.playercard {
+  width: 15%;
+  margin: 2%;
+  padding: 1%;
+  border: 2px solid #4b8273;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px 3px #2f5148;
 }
 
 .dark-mode {
-  color: #fff;
-  background-color: #313843;
-
-  .navbar {
-    background-color: #1f2022;
-    border: none;
-  }
+  color: #fcf0d3;
+  background-color: #24292e;
 }
