@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './App.css';
-import PlayerCard from './components/PlayerCard';
+import PlayerCard from './components/PlayerCard.js';
+import Nav from './components/Nav.js'
 
 class App extends React.Component {
   constructor(){
@@ -28,6 +29,7 @@ class App extends React.Component {
     console.log(this.state.players);
     return (
       <div>
+        <Nav />
         <PlayerCard player={this.state.players} />
         
       </div>
