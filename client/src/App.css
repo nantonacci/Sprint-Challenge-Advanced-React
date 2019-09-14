@@ -1,33 +1,42 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'PT Serif', serif;
+}
+body {
+  color: #24292e;
+  background-color: #fcf0d3;
+}
+button {
+  border: 2px solid #372031;
+  background-color: #9ec7bc;
+  color: #372031;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 3px;
+
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardcontainer {
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.playercard {
+  width: 15%;
+  margin: 2%;
+  padding: 1%;
+  border: 2px solid #4b8273;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px 3px #2f5148;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-mode {
+  color: #fcf0d3;
+  background-color: #24292e;
 }
